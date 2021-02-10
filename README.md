@@ -6,15 +6,16 @@ Emphasis
 
 Lists:
 
+Ordered
++
++
++
+
 Unordered
 -
 -
 -
 
-Ordered
-1.
-2.
-3.
 
 
 Links
