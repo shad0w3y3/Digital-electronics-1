@@ -7,9 +7,10 @@ Emphasis
 Lists:
 
 Ordered
-+
-+
-+
+1.
+2.
+3.
+
 
 Unordered
 -
