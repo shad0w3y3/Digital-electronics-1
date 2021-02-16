@@ -87,9 +87,7 @@ begin
   fnor_o <= ( b_i nor (not a_i)) nor ( c_i nor b_i);
 
 end architecture dataflow;
-
 ´´´
-
 
 
 ### *Wave form 1*
