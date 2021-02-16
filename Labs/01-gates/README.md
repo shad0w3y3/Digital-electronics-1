@@ -1,5 +1,9 @@
 # *Digital-electronics-1*
 
+## *Laborotory 1*
+
+[My Digital-electronics-1 git repository](https://github.com/shad0w3y3/Digital-electronics-1)
+
 ## *1. Verification of De Morgan's laws*
 
 ### *f(c,b,a)=((not b) and a) or ((not c)and (not b))*  
@@ -102,7 +106,7 @@ end architecture dataflow
 
 ## *2. Verification of Distributive Laws*
 
-### *(a and b) or (a and c) = a and (b or c)
+### *(a and b) or (a and c) = a and (b or c)*
 
 c | b | a | (a and b) or (a and c)| a and (b or c)
 --| --|---|-----------------------|---------------
@@ -116,7 +120,7 @@ c | b | a | (a and b) or (a and c)| a and (b or c)
 1 | 1 | 1 |    1                  |       1
 
 
-### *(a or b) and (a or c) = a or (b and c)
+### *(a or b) and (a or c) = a or (b and c)*
 
 c | b | a | (a and b) or (a and c)| a and (b or c)
 --| --|---|-----------------------|---------------
