@@ -42,7 +42,7 @@ c | b | a | f(c,b,a)NOR
 1 | 1 | 1 |    0
 
 
- ``vhdl 
+ ``` VHDL code 1:
 ------------------------------------------------------------------------
 --
 -- Example of basic OR, AND, XOR gates.
@@ -86,10 +86,10 @@ begin
   fnand_o <= ((not b_i) nand a_i) nand ((not c_i) nand (not b_i));
   fnor_o <= ( b_i nor (not a_i)) nor ( c_i nor b_i);
 
-end architecture dataflow;
-´´
+end architecture dataflow  
+```
 
-*My NOR wave form is inverter, I don´t know how to make it right to match the other signals*
+### *My NOR wave form is inverter, I don´t know how to make it right to match the other signals* ###
 
 ### *Wave form 1*
 
@@ -132,7 +132,7 @@ c | b | a | (a and b) or (a and c)| a and (b or c)
 
 
 
- ``vhdl 
+ ``` VHDL code 2:
 
 ------------------------------------------------------------------------
 --
@@ -177,7 +177,7 @@ begin
 
 
 end architecture dataflow;
-´´
+```
 
 
 ### *Wave form 2*
