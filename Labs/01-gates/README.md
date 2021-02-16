@@ -42,7 +42,7 @@ c | b | a | f(c,b,a)NOR
 1 | 1 | 1 |    0
 
 
-``` vhdl 
+ ``vhdl 
 ------------------------------------------------------------------------
 --
 -- Example of basic OR, AND, XOR gates.
@@ -87,12 +87,13 @@ begin
   fnor_o <= ( b_i nor (not a_i)) nor ( c_i nor b_i);
 
 end architecture dataflow;
-´´´
+´´
 
+*My NOR wave form is inverter, I don´t know how to make it right to match the other signals*
 
 ### *Wave form 1*
 
-![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/digi%20electronics%201%20wave%20form.png)
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Wave%20form%201.png)
 
 
 ### *Here is my [EDA Playground](https://www.edaplayground.com/x/es7q) for De Morgan's Laws*
@@ -131,7 +132,7 @@ c | b | a | (a and b) or (a and c)| a and (b or c)
 
 
 
-``` vhdl 
+ ``vhdl 
 
 ------------------------------------------------------------------------
 --
@@ -176,8 +177,8 @@ begin
 
 
 end architecture dataflow;
+´´
 
-´´´
 
 ### *Wave form 2*
 
