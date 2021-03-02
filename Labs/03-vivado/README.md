@@ -8,7 +8,7 @@
 
 ### 16 slide switches and 16 LEDs on Nexys A7 board
 
-
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/16slide_switches.png)
 
 ## *2. 2-bit wide 4-to-1 multiplexer*
 
@@ -85,6 +85,8 @@ begin
         
 end architecture Behavioral;
 ```
+### *Simulator output*
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/03-vivado/Pictures/waveform_vivado.jpg)
 
 ## *3. Personal Vivado tutorial*
 
