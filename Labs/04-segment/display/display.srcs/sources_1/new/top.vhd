@@ -71,16 +71,41 @@ begin
 
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     -- WRITE YOUR CODE HERE
-    
+    LED(4) <= '1' when (SW = "0000") else  --0
+              '0';
     -- Turn LED(5) on if input value is greater than 9
     -- WRITE YOUR CODE HERE
-    
+    LED(5) <= '1' when (SW = "1010") else  --A
+
+              '1' when (SW = "1011") else  --B
+
+              '1' when (SW = "1100") else  --C
+
+              '1' when (SW = "1101") else  --D
+
+              '1' when (SW = "1110") else  --E
+
+              '1' when (SW = "1111") else  --F
+              '0';
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
     -- WRITE YOUR CODE HERE
-    
+    LED(6)  <= '1' when (SW = "0001") else  -- 1
+               '1' when (SW = "0011") else  -- 3
+               '1' when (SW = "0101") else  -- 5
+               '1' when (SW = "0111") else  -- 7
+               '1' when (SW = "1001") else  -- 9
+               '1' when (SW = "1011") else  -- B (11)
+               '1' when (SW = "1101") else  -- D (13)
+               '1' when (SW = "1111") else  -- F (15)
+               '0';
+
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
     -- WRITE YOUR CODE HERE
+    LED(7)  <= '1' when (SW = "0001") else  -- 1
+               '1' when (SW = "0010") else  -- 2
+               '1' when (SW = "0100") else  -- 4
+               '1' when (SW = "1000") else  -- 8
+               '0';
 
 
-
-end Behavioral;
+end architecture Behavioral;
