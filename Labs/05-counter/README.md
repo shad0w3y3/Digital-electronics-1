@@ -4,7 +4,13 @@
 
 [My Digital-electronics-1 git repository](https://github.com/shad0w3y3/Digital-electronics-1)
 
-## *1.*
+## *1. Preparation tasks*
+
+#### *Connections of push buttons*
+
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/Schematic%20of%20buttons.png)
+
+#### *Table with calculated values*
 
   Time interval | Number of clk periods | Number of clk periods | Number of clk periods in binary
 ---|---|---|---
