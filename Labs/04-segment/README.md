@@ -7,7 +7,7 @@
 ### *1. Preperation tasks*
 
 #### *Nexys A7 7-segment display connections*
-[Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/04-segment/Pictures/7-segment%20display%20pinout.png)
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/04-segment/Pictures/7-segment%20display%20pinout.png)
 
 #### *7-segment display truth table*
 
