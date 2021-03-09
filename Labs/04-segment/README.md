@@ -29,3 +29,26 @@ C |     1100     |     0    |     1      |     1    |      0  |      0    |     
 D |     1101     |     1    |     0      |     0    |      0  |      0    |       1      |     0       
 E |     1110     |     0    |     1      |     1    |      0  |      0    |       0      |     0      
 F |     1111     |     0    |     1      |     1    |      1  |      0    |       0      |     0      
+
+### *2. 7-segment display decoder*
+
+#### *VHDL architecture from source file*
+``` VHDL code
+
+```
+
+#### *VHDL stimulus process from testbench file*
+``` VHDL code
+
+```
+
+####  Simulated time waveform
+![Image]()
+
+#### *Listing of VHDL code from source file*
+``` VHDL code
+
+```
+
+### *2. LED (7:4) indicators*
+
