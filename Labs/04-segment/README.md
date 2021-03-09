@@ -230,7 +230,7 @@ F |     1111     |     0    |     1      |     1    |      0
 
 #### *VHDL code for LED(7:4)*
 
-´´´ VHDL
+``` VHDL
  -- Turn LED(4) on if input value is equal to 0, ie "0000"
     -- WRITE YOUR CODE HERE
     
@@ -269,7 +269,7 @@ F |     1111     |     0    |     1      |     1    |      0
                '1' when (SW = "0100") else  --4
                '1' when (SW = "1000") else  --8
                '0';
-´´´
+```
 
 #### *Simulated time waveform*
 
