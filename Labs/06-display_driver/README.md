@@ -4,13 +4,22 @@
 
 [My Digital-electronics-1 git repository](https://github.com/shad0w3y3/Digital-electronics-1)
 
-## *1. 2-bit comparator truth table*
+## *1. Display driver*
 
+#### *VHDL code of the process*
 
+``` VHDL
 
-## *2. 2-bit comparator*
+```
 
-### *K-maps*
+#### *VHDL code of the top layer architecture*
 
-#### Greater than K-Map
+``` VHDL
 
+```
+
+## *2. Eight-digit driver*
+
+#### *Sketch of the driver schematic*
+
+![Image]()
