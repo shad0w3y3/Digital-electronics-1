@@ -63,12 +63,12 @@ begin
     clk_en0 : entity work.clock_enable
         generic map(
             --- WRITE YOUR CODE HERE
-            c_MAX => 25000000
+            g_MAX => 25000000  -- 250ms
         )
         port map(
             --- WRITE YOUR CODE HERE
-        clk   => CLK100MHZ
-        reset => BTNC
+        clk   => CLK100MHZ,
+        reset => BTNC,
         ce_o  => s_en
         );
 
@@ -77,9 +77,15 @@ begin
     bin_cnt0 : entity work.cnt_up_down
         generic map(
             --- WRITE YOUR CODE HERE
+        g_CNT_WIDTH => 4 -- 4-bit
         )
         port map(
             --- WRITE YOUR CODE HERE
+        clk   => CLK100MHZ,
+        reset => BTNC,
+        en_i  => s_en,
+        cnt_up_i => SW(0),
+        cnt_o  => s_cnt
         );
 
     -- Display input value on LEDs
