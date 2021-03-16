@@ -22,9 +22,34 @@
 1 sek | 100 000 000 | x"5F5E100" | b"0101_1111_0101_1110_0001_0000_0000" 
 
 
-## *2. *
+## *2. Bidirectional counter*
 
-### **
+#### *VHDL code of the process p_cnt_up_down*
 
-#### 
+``` VHDL
 
+
+```
+
+#### *VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd*
+
+``` VHDL
+
+
+```
+
+#### *Simulated time waveform, all inputs and outputs*
+
+![Image]()
+
+## *3. Top level*
+
+#### *VHDL code from source file top.vhd*
+
+``` VHDL
+
+```
+
+#### *Image of the top layer*
+
+![Image]()
