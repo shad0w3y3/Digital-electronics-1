@@ -27,20 +27,70 @@
 #### *VHDL code of the process p_cnt_up_down*
 
 ``` VHDL
+    p_cnt_up_down : process(clk)
+    begin
+        if rising_edge(clk) then
+        
+            if (reset = '1') then               -- Synchronous reset
+                s_cnt_local <= (others => '0'); -- Clear all bits
+
+            elsif (en_i = '1' AND cnt_up_i = '1') then       --adds 1
+                s_cnt_local <= s_cnt_local + 1;
+
+                -- TEST COUNTER DIRECTION HERE
+
+             elsif (en_i = '1' AND cnt_down_i = '1') then       --subtracts 1
+                s_cnt_local <= s_cnt_local - 1;
 
 
+            end if;
+        end if;
+    end process p_cnt_up_down;
 ```
 
 #### *VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd*
 
 ``` VHDL
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;
+        
+        s_reset <= '1';                 -- Reset activated
+        wait for 73 ns;
+        
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
 
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
 
+        s_en     <= '1';                -- Enable counting
+        
+        s_cnt_up <= '1';
+        wait for 380 ns;                -- Change counter direction
+        s_cnt_up <= '0';
+        wait for 220 ns;
+        
+        
+        s_en     <= '0';                -- Disable counting
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 #### *Simulated time waveform, all inputs and outputs*
 
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/wave1.png)
 
 ## *3. Top level*
 
