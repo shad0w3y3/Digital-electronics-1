@@ -71,8 +71,10 @@ begin
     begin
         s_reset <= '0';
         wait for 12 ns;
+        
         s_reset <= '1';                 -- Reset activated
         wait for 73 ns;
+        
         s_reset <= '0';
         wait;
     end process p_reset_gen;
@@ -85,10 +87,13 @@ begin
         report "Stimulus process started" severity note;
 
         s_en     <= '1';                -- Enable counting
+        
         s_cnt_up <= '1';
         wait for 380 ns;                -- Change counter direction
         s_cnt_up <= '0';
         wait for 220 ns;
+        
+        
         s_en     <= '0';                -- Disable counting
 
         report "Stimulus process finished" severity note;

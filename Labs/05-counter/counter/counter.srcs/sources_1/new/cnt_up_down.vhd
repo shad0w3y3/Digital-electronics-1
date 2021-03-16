@@ -25,6 +25,7 @@ entity cnt_up_down is
         reset    : in  std_logic;       -- Synchronous reset
         en_i     : in  std_logic;       -- Enable input
         cnt_up_i : in  std_logic;       -- Direction of the counter
+        cnt_down_i : in std_logic; 
         cnt_o    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0)
     );
 end entity cnt_up_down;
@@ -50,13 +51,13 @@ begin
             if (reset = '1') then               -- Synchronous reset
                 s_cnt_local <= (others => '0'); -- Clear all bits
 
-            elsif (en_i = '1') then       -- Test if counter is enabled
-
+            elsif (en_i = '1' AND cnt_up_i = '1') then       --adds 1
+                s_cnt_local <= s_cnt_local + 1;
 
                 -- TEST COUNTER DIRECTION HERE
 
-                
-                s_cnt_local <= s_cnt_local + 1;
+             elsif (en_i = '1' AND cnt_down_i = '1') then       --subtracts 1
+                s_cnt_local <= s_cnt_local - 1;
 
 
             end if;

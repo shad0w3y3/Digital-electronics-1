@@ -210,6 +210,6 @@ begin
 end architecture Behavioral;
 ```
 
-#### *Image of the top layer*
+#### *Top layer*
 
 ![Image]()
