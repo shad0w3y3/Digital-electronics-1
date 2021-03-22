@@ -40,15 +40,32 @@
   },
 }
 ```
+## *2. Display driver*
 
-#### *VHDL code of the top layer architecture*
+#### *VHDL p_mux process*
 
 ``` VHDL
 
 ```
 
-## *2. Eight-digit driver*
+#### *tb_driver_7seg_4digits*
 
-#### *Sketch of the driver schematic*
+``` VHDL
+
+```
+
+#### *Simulated waveforms*
+
+![Image]()
+
+#### *Top layer*
+
+``` VHDL
+
+```
+
+## *3. Eight-digit driver*
+
+#### *Image of the driver schematic*
 
 ![Image]()
