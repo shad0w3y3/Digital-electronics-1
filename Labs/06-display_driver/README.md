@@ -1,6 +1,6 @@
 # *Digital-electronics-1*
 
-## *Laborotory 2*
+## *Laborotory 6*
 
 [My Digital-electronics-1 git repository](https://github.com/shad0w3y3/Digital-electronics-1)
 
