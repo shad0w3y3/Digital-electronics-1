@@ -47,8 +47,25 @@ entity top is
 end top;
 
 architecture Behavioral of top is
-
+    -- No internal signals
 begin
 
+    --------------------------------------------------------------------
+    -- Instance (copy) of driver_7seg_4digits entity
+    driver_seg_4 : entity work.driver_7seg_4digits
+        port map(
+            clk        => CLK100MHZ,
+            reset      => BTNC,
+            data0_i(3) => SW(3),
+            data0_i(2) => SW(2),
+            data0_i(1) => SW(1),
+            data0_i(0) => SW(0),
+            --- WRITE YOUR CODE HERE
+            dp_i => "0111",
+            --- WRITE YOUR CODE HERE
+        );
 
-end Behavioral;
+    -- Disconnect the top four digits of the 7-segment display
+    AN(7 downto 4) <= b"1111";
+
+end architecture Behavioral;
