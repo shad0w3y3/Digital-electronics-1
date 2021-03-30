@@ -166,7 +166,7 @@ end process p_stimulus;
 
 #### *Waveform*
 
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/wave1.png)
 
 ## *3. Flip-flops*
 
@@ -628,17 +628,17 @@ end process p_stimulus;
 #### *Waveforms*
 
 ##### *tb_d_ff_arst*
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/wave2.png)
 
 ##### *tb_d_ffarst*
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/wave3.png)
 
 ##### *tb_jk_ff_rst*
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/wave4.png)
 
 ##### *tb_t_ff_rst*
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/wave5.png)
 
 ## *4. Shift register schematic*
 
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/schematic.png)
