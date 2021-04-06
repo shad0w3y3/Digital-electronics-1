@@ -16,7 +16,7 @@ Output R | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
 
 #### *RGB LED connections*
 
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Pictures/schematic.png)
 
 #### *Table with colour settings*
 
@@ -26,6 +26,10 @@ LD16 | N15, M16, R12 | 1,0,0 | 1,1,0 | 0,1,0
 LD17 | N16, R11, G14 | 1,0,0 | 1,1,0 | 0,1,0 
 
 ## *2. TLC*
+
+#### *State diagram*
+
+![Image]()
 
 #### *VHDL code of p_traffic_fsm*
 
@@ -168,6 +172,12 @@ p_output_fsm : process(s_state)
 ## *3. Smart controller*
 
 #### *State table*
+
+LED | Artix-7 pins | Red | Yellow | Green 
+---|---|---|---|---
+LD16 | N15, M16, R12 | 1,0,0 | 1,1,0 | 0,1,0
+LD17 | N16, R11, G14 | 1,0,0 | 1,1,0 | 0,1,0 
+
 
 #### *State diagram*
 
