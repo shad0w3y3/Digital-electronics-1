@@ -29,7 +29,7 @@ LD17 | N16, R11, G14 | 1,0,0 | 1,1,0 | 0,1,0
 
 #### *State diagram*
 
-![Image]()
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Pictures/s1.jpg)
 
 #### *VHDL code of p_traffic_fsm*
 
@@ -173,13 +173,17 @@ p_output_fsm : process(s_state)
 
 #### *State table*
 
-LED | Artix-7 pins | Red | Yellow | Green 
----|---|---|---|---
-LD16 | N15, M16, R12 | 1,0,0 | 1,1,0 | 0,1,0
-LD17 | N16, R11, G14 | 1,0,0 | 1,1,0 | 0,1,0 
+Current State | Direction South | Direction West | Delay | No Cars | Cars West | Cars South | Cars Both Directions 
+---|---|---|---|---|---|---|---
+goS | green | red | atleast 3 sec | goS | waitS | goS | waitS
+waitS | yellow | red | 0.5 sec | goW | goW | goW | goW
+goW | red | green | atleast 3 sec | goW | goW | waitW | waitW
+waitW | red | yellow | 0.5 sec | goS | goS | goS | goS
 
 
 #### *State diagram*
+
+![Image](https://github.com/shad0w3y3/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Pictures/s2.jpg)
 
 #### *VHDL code of p_smart_traffic_fsm*
 
